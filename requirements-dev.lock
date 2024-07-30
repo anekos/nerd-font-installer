@@ -28,6 +28,7 @@ cfgv==3.4.0
     # via pre-commit
 click==8.1.7
     # via black
+    # via nerd-font-installer
 dill==0.3.8
     # via pylint
 distlib==0.3.8

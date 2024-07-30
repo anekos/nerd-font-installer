@@ -18,6 +18,8 @@ bs4==0.0.2
 certifi==2024.7.4
     # via httpcore
     # via httpx
+click==8.1.7
+    # via nerd-font-installer
 h11==0.14.0
     # via httpcore
 httpcore==1.0.5
