@@ -1,4 +1,5 @@
 import subprocess
+import sys
 import time
 from pathlib import Path
 
@@ -37,7 +38,8 @@ def cmd_install(dest: Path) -> None:
             print("  Font directory already exists, skipping")
 
     if not first:
-        subprocess.run(["fc-cache", "-fv"])
+        if sys.platform == "linux":
+            subprocess.run(["fc-cache", "-fv"])
 
 
 if __name__ == "__main__":
